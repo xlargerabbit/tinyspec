@@ -1,0 +1,21 @@
+{
+  "description": "tinyspec event hooks — add entries under each event key",
+  "hooks": {
+    "PreToolUse": [],
+    "PostToolUse": [],
+    "UserPromptSubmit": [],
+    "Stop": [],
+    "SessionStart": [
+      {
+        "matcher": "startup|clear|compact",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "\"${CLAUDE_PLUGIN_ROOT}/hooks/session-start.sh\"",
+            "async": false
+          }
+        ]
+      }
+    ]
+  }
+}

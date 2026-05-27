@@ -1,0 +1,20 @@
+{
+  "name": "tinyspec",
+  "owner": {
+    "name": "xtinyrabbit",
+    "email": "xtinyrabbit@gmail.com"
+  },
+  "metadata": {
+    "description": "Spec-first, general-purpose agent workflow harness — skills, hooks, and MCP configs for long-running engineering tasks",
+    "version": "0.1.0",
+    "pluginRoot": "."
+  },
+  "plugins": [
+    {
+      "name": "tinyspec",
+      "description": "Spec-first, general-purpose agent workflow harness — skills, hooks, and MCP configs for long-running engineering tasks",
+      "version": "0.1.0",
+      "source": "."
+    }
+  ]
+}

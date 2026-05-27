@@ -1,0 +1,20 @@
+{
+  "name": "tinyspec",
+  "description": "Spec-first, general-purpose agent workflow harness — skills, hooks, and MCP configs for long-running engineering tasks",
+  "version": "0.1.0",
+  "author": {
+    "name": "xtinyrabbit",
+    "email": "xtinyrabbit@gmail.com"
+  },
+  "license": "MIT",
+  "repository": "https://github.com/xlargerabbit/tinyspec",
+  "keywords": [
+    "skills",
+    "agents",
+    "workflows",
+    "agentflow",
+    "hooks",
+    "mcp",
+    "spec-driven"
+  ]
+}

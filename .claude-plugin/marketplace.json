@@ -1,0 +1,20 @@
+{
+  "name": "tinyspec",
+  "description": "Lightweight, spec-first, general-purpose Claude Code plugin supporting long-running harness engineering agent tasks: skills, agents, hooks, and MCP configs",
+  "owner": {
+    "name": "xtinyrabbit",
+    "email": "xtinyrabbit@gmail.com"
+  },
+  "plugins": [
+    {
+      "name": "tinyspec",
+      "description": "Lightweight, spec-first, general-purpose Claude Code plugin supporting long-running harness engineering agent tasks: skills, agents, hooks, and MCP configs",
+      "author": {
+        "name": "xtinyrabbit",
+        "email": "xtinyrabbit@gmail.com"
+      },
+      "source": "./",
+      "version": "0.1.0"
+    }
+  ]
+}
