@@ -53,4 +53,10 @@ checkpoints:
 \`\`\`"
 fi
 
-printf '{"hookSpecificOutput":{"hookEventName":"SessionStart","additionalContext":%s}}' "$(json_encode "$MSG")"
+if [ -n "${CLAUDE_PLUGIN_ROOT:-}" ] && [ -z "${COPILOT_CLI:-}" ]; then
+  # Claude Code sets CLAUDE_PLUGIN_ROOT without COPILOT_CLI
+  printf '{"hookSpecificOutput":{"hookEventName":"SessionStart","additionalContext":%s}}' "$(json_encode "$MSG")"
+else
+  # Copilot CLI (sets COPILOT_CLI=1) or unknown platform — SDK standard format
+  printf '{"additionalContext": %s}' "$(json_encode "$MSG")"
+fi

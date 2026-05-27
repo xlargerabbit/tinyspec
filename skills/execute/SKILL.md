@@ -1,6 +1,7 @@
 ---
 name: execute
 description: Internal — phase "execute" handler. Router-only, do not invoke manually.
+user-invocable: false
 metadata:
   version: "0.1.0"
 ---

@@ -1,5 +1,6 @@
 {
   "description": "tinyspec event hooks — add entries under each event key",
+  "version": 1,
   "hooks": {
     "PreToolUse": [],
     "PostToolUse": [],
@@ -7,7 +8,6 @@
     "Stop": [],
     "SessionStart": [
       {
-        "matcher": "startup|clear|compact",
         "hooks": [
           {
             "type": "command",
