@@ -34,7 +34,7 @@ else
 
 \`\`\`
 graph: coding
-phase: intent
+phase: design
 status: active
 loop_count: 0
 
