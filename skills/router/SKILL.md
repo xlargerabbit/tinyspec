@@ -22,15 +22,14 @@ Stateless graph interpreter. Read state → invoke node skill → update state �
 6. **Before invoking the node skill**, check for special conditions:
    - If `artifacts.execute_status` contains "blocked on": do NOT invoke execute again. Surface the blocked task ID to the user and ask: "Task <id> failed. [R]etry / [S]kip task / [C]ancel?" Wait for user input before proceeding.
 7. Invoke the node skill via the Skill tool: `tinyspec:<phase>`
-8. Re-read `.tinyspec/session-state.md`
-9. Re-read `.tinyspec/session-state.md` and re-read the current node definition from the graph file. Evaluate routing conditions:
+8. Re-read `.tinyspec/session-state.md` and re-read the current node definition from the graph file. Evaluate routing conditions:
    - Look at the node's `advance_when` field and evaluate it against current `artifacts` using string comparison operators: `==`, `starts with`, `contains`
    - If `advance_when` condition is met: advance phase to the first entry in the node's `next` list
    - If `retry_when` is defined on the node and its condition is met: route to the second entry in `next` (the loop-back target)
    - If neither condition is met: stay on current phase (do not advance) — the skill will be re-invoked on the next router tick
-10. Write `phase` = next node to `.tinyspec/session-state.md`; mark current node `complete` in `checkpoints`; reset `loop_count` to 0 on phase change
-11. Write `.tinyspec/STATUS.md` using the **STATUS.md Format** below
-12. Return to step 1
+9. Write `phase` = next node to `.tinyspec/session-state.md`; mark current node `complete` in `checkpoints`; reset `loop_count` to 0 on phase change
+10. Write `.tinyspec/STATUS.md` using the **STATUS.md Format** below
+11. Return to step 1
 
 ## Rules
 

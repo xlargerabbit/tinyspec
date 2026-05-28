@@ -34,7 +34,7 @@ Capture the user's intent and produce a validated design spec (or inline approva
 
 4. **Full-design path:**
    - Explore the codebase: read relevant files and recent commits to understand what already exists.
-   - Gather up to 3 targeted clarifying questions and ask them all in ONE batch — do not ask one at a time. Focus on: purpose and success criteria, constraints or non-goals, and any integration points that are unclear.
+   - Gather up to 5 targeted clarifying questions and ask them all in ONE batch — do not ask one at a time. Focus on: purpose and success criteria, constraints or non-goals, and any integration points that are unclear.
    - Propose 2-3 approaches with trade-offs; state your recommendation.
    - After the user selects an approach, write the spec to `.tinyspec/specs/YYYY-MM-DD-<topic>-design.md`.
    - Present the spec section by section and confirm each section with the user.

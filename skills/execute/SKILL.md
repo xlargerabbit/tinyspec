@@ -51,6 +51,7 @@ The plan file is the shared communication channel — it is the only source of t
      - Complete within 10 minutes. If you cannot finish, update the task status to "failed: timeout" in the plan file and stop.
      - Update the task's **status** field in the plan file to "done" on success or "failed: <reason>" on failure
      - Commit your changes before returning
+     - Each subagent should return after its status is writen
      ```
 
 **g. Wait for all spawned subagents to return.**
