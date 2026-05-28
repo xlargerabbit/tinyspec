@@ -8,6 +8,7 @@
     "Stop": [],
     "SessionStart": [
       {
+        "matcher": "startup|clear|compact",
         "hooks": [
           {
             "type": "command",
